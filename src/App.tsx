@@ -1,4 +1,3 @@
-import "./App.css";
 import TripTable from "./components/TripTable";
 
 function App() {
