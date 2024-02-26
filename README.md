@@ -12,13 +12,13 @@ This solution provides a minimal setup to get React working in Vite with HMR and
 
 - [React 18.X](https://react.dev/)
 - [TypeScript](https://www.typescriptlang.org/)
-- [Tailwind] (https://tailwindcss.com/)
+- [Tailwind](https://tailwindcss.com/)
 
 ## Used Platform
 
 - [ViteJS](https://vitejs.dev/)
 
-## pre check before start your local
+## Pre check before start your local
 
 - nodejs >18.x
 
@@ -26,14 +26,14 @@ This solution provides a minimal setup to get React working in Vite with HMR and
 
 You will need to use the environment variables [defined in `.env`](.env) to run this solution. It's recommended you use [Vercel Environment Variables](https://vercel.com/docs/concepts/projects/environment-variables) for this, but a `.env` file is all that is necessary.
 
-> Note: You should not commit your `.env` file or it will expose secrets that will allow others to control your Shopify store.
+> Note: You should not commit your `.env` file or it will expose secrets that will allow others to control your Application.
 
 1. Clone: `git clone https://github.com/satyendera/reece.git` and `cd reece`
 2. Install Dependancies: `yarn install` or `npm install`
 3. Run mockserver in local: `yarn mockserver` or `npm run mockserver`
 4. in another tab or window of terminal `yarn dev` or `npm run dev`
 
-Your app should now be running on [localhost:5173](http://localhost:5173/).
+Your app should now be running on [http://localhost:5173](http://localhost:5173/).
 
 ## Expanding the ESLint configuration
 
