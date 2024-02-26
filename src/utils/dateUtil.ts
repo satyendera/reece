@@ -7,12 +7,14 @@ export function convertDate(rowDate: string | number | Date) {
 
 export function sortByDate(arrayData: tripData[], asc = false) {
   const arr1 = arrayData.map((obj: tripData) => {
-    return { ...obj, checkInDate: new Date(obj.checkInDate) };
+    if (obj) {
+      return { ...obj, checkInDate: new Date(obj?.checkInDate) };
+    }
   });
   const sortedAsc = arr1.sort(
     (objA, objB) =>
-      Number(asc ? objA.checkInDate : objB.checkInDate) -
-      Number(asc ? objB.checkInDate : objA.checkInDate)
+      Number(asc ? objA?.checkInDate : objB?.checkInDate) -
+      Number(asc ? objB?.checkInDate : objA?.checkInDate)
   );
   return sortedAsc;
 }

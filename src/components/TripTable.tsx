@@ -3,6 +3,7 @@ import TripService from "../services/TripServices";
 import TripItem from "./TripItem";
 import tripData from "../types/trips";
 import { sortByDate } from "../utils/dateUtil";
+import { IMAGE_SERVER, IMAGE_WIDTH_SIZE } from "../constants";
 
 interface Response {
   data: {
@@ -125,7 +126,7 @@ const TripTable: React.FC = () => {
             ? filteredTrips.map((trip, index) => (
                 <React.Fragment key={index}>
                   <TripItem
-                    heroImage={`https://cms.inspirato.com/ImageGen.ashx?image=${trip.heroImage}&width=264`}
+                    heroImage={`${IMAGE_SERVER}${trip.heroImage}&width=${IMAGE_WIDTH_SIZE}`}
                     unitName={trip.unitName}
                     unitStyleName={trip.unitStyleName}
                     checkInDate={trip.checkInDate}
@@ -136,7 +137,7 @@ const TripTable: React.FC = () => {
               trips.map((trip, index) => (
                 <React.Fragment key={index}>
                   <TripItem
-                    heroImage={`https://cms.inspirato.com/ImageGen.ashx?image=${trip.heroImage}&width=264`}
+                    heroImage={`${IMAGE_SERVER}${trip.heroImage}&width=${IMAGE_WIDTH_SIZE}`}
                     unitName={trip.unitName}
                     unitStyleName={trip.unitStyleName}
                     checkInDate={trip.checkInDate}
