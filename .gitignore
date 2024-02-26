@@ -13,7 +13,7 @@ dist
 dist-ssr
 *.local
 yarn.lock
-*.env
+.env
 
 
 # Editor directories and files
